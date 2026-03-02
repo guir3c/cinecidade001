@@ -15,13 +15,12 @@
 }
 
 body{
-    font-family: Arial, sans-serif;
+    font-family: 'Manrope', sans-serif;
     background:var(--black);
     color:var(--white);
     line-height:1.7;
     letter-spacing:0.3px;
 }
-
 .container{
     width:90%;
     max-width:1200px;
