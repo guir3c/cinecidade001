@@ -1,4 +1,3 @@
-
 :root{
     --black:#0c0c0d;
     --charcoal:#16171a;
@@ -15,12 +14,13 @@
 }
 
 body{
-    font-family: 'Manrope', sans-serif;
+    font-family: Arial, sans-serif;
     background:var(--black);
     color:var(--white);
     line-height:1.7;
     letter-spacing:0.3px;
 }
+
 .container{
     width:90%;
     max-width:1200px;
