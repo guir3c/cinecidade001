@@ -122,41 +122,63 @@ body{
 
 /* IMAGENS */
 
+/* NOVO LAYOUT EDITORIAL */
+
 .image-section{
-    padding:80px 0;
+    padding:100px 0;
     border-bottom:1px solid var(--graphite);
 }
 
-.image-grid{
+.image-layout{
     display:grid;
     grid-template-columns:1fr;
     gap:20px;
 }
 
-@media(min-width:700px){
-    .image-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-}
-
-@media(min-width:1100px){
-    .image-grid{
-        grid-template-columns:repeat(4,1fr);
-    }
-}
-
-.image-card{
-    width:100%;
-    aspect-ratio:4/5;
-    overflow:hidden;
-    border:1px solid var(--graphite);
-}
-
-.image-card img{
+.image-layout img{
     width:100%;
     height:100%;
     object-fit:cover;
     display:block;
+}
+
+/* MOBILE */
+
+.img-large,
+.img-vertical,
+.img-small{
+    width:100%;
+}
+
+/* DESKTOP */
+
+@media(min-width:1000px){
+
+    .image-layout{
+        grid-template-columns:2fr 1fr;
+        grid-template-rows:350px 350px;
+        gap:30px;
+    }
+
+    .img-large{
+        grid-row:1 / span 2;
+        grid-column:1;
+    }
+
+    .img-vertical{
+        grid-row:1;
+        grid-column:2;
+    }
+
+    .img-small:nth-of-type(3){
+        grid-row:2;
+        grid-column:2;
+    }
+
+    .img-small:nth-of-type(4){
+        display:none; /* opcional, remove excesso visual */
+    }
+
 }
 
 /* SECTIONS */
