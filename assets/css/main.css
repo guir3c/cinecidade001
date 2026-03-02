@@ -14,11 +14,10 @@
 }
 
 body{
-    font-family: Arial, sans-serif;
+    font-family: 'Manrope', sans-serif;
     background:var(--black);
     color:var(--white);
     line-height:1.7;
-    letter-spacing:0.3px;
 }
 
 .container{
@@ -30,7 +29,6 @@ body{
 .header{
     border-bottom:1px solid var(--graphite);
     padding:30px 0;
-    background:var(--black);
 }
 
 .header-inner{
@@ -40,7 +38,7 @@ body{
 }
 
 .logo{
-    font-weight:bold;
+    font-weight:700;
     letter-spacing:4px;
     font-size:16px;
 }
@@ -59,12 +57,13 @@ body{
 }
 
 .hero{
-    padding:160px 0;
+    padding:180px 0;
     border-bottom:1px solid var(--graphite);
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85));
 }
 
 .hero h1{
-    font-size:48px;
+    font-size:54px;
     font-weight:600;
     max-width:900px;
 }
@@ -128,6 +127,12 @@ body{
 .card p{
     color:var(--muted);
     font-size:15px;
+}
+
+.text-block{
+    max-width:750px;
+    font-size:17px;
+    color:var(--muted);
 }
 
 .cta{
